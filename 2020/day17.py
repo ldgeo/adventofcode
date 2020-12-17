@@ -33,7 +33,7 @@ def neighbors(*coords):
 
 newactives = actives.copy()
 
-for dz in range(1, cycles + 1):
+for _ in range(1, cycles + 1):
     for active in actives:
         potes = set(neighbors(*active))
         if len(potes & actives) not in (2, 3):
