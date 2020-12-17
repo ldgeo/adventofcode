@@ -1,11 +1,10 @@
-from array import array
 
 startseq = [9,19,1,6,0,5,4]
 # iterations = 2020
 iterations = 30_000_000
 
 # array of last positions
-pos = array('i', [0] * iterations)
+pos = [0] * iterations
 for idx, v in enumerate(startseq[:-1], start=1):
     pos[v] = idx
 
